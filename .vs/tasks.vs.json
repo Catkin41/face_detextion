@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "任务-mmod_human_face_detector",
+      "appliesTo": "face-recognition_xue/mmod_human_face_detector.dat",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "任务-env",
+      "appliesTo": "face-recognition_xue/env/",
+      "type": "launch"
+    }
+  ]
+}
