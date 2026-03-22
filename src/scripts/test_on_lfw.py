@@ -69,7 +69,7 @@ if __name__ == "__main__":
     # 指定你的 200 张图片存放的总目录
     DATA_SET_PATH = "dataset" 
     # 输出报告文件名
-    REPORT_NAME = "test_report.csv"
+    REPORT_NAME = "test_report2.csv"
     
     if not os.path.exists(DATA_SET_PATH):
         print(f"❌ 错误：找不到目录 {DATA_SET_PATH}，请先创建并放入图片。")

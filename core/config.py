@@ -18,3 +18,9 @@ class Config:
     CONFIDENCE_THRESHOLD = 0.5   # 降低门限，捕捉 7 人合影中的边缘小脸
     NMS_IOU_THRESHOLD = 0.5      # 提高 IoU，允许 7 人合影中人脸重叠
     TARGET_WIDTH = 1200          # 预处理宽度，保证小脸像素足够
+
+    #视频优化
+    VIDEO_SKIP_FRAMES = 3        # 视频每隔多少帧进行一次检测
+    VIDEO_TARGET_WIDTH = 1200 
+    VIDEO_UPSAMPLE = 0
+    STATIC_TARGET_WIDTH = 640        # 视频预处理宽度，保持性能同时兼顾检测率
