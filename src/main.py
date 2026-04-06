@@ -26,7 +26,7 @@ class VideoProcessorThread(QThread):
                     frame = cv2.flip(frame, 1)
                     # 调用检测逻辑
                     boxes, count = self.detection_manager.process_frame(frame)
-                    self.frame_processed.emit(frame, boxes, count)  # 发送信号回主线程
+                    self.frame_processed.emit(frame, boxes, count)
                 except Exception as e:
                     self.frame_processed.emit(None, [], 0)
                     QMessageBox.critical(None, "视频检测错误", str(e))
